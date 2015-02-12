@@ -1,4 +1,5 @@
 # meteor-opal
+
 Meteor support for Opal, the Ruby to Javascript Compiler
 
 ## What's Opal?
@@ -72,5 +73,3 @@ console.log(Opal.Object.$a()); // 123
 // global variable
 console.log(Opal.gvars.b); // 321
 ```
-
-
