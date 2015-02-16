@@ -1,23 +1,31 @@
 Package.describe({
-  name: 'massimoronca:opal-meteor',
-  summary: 'Meteor ported to Opal',
-  version: '0.1.0',
+  name: 'massimoronca:opal',
+  summary: 'Opal - Ruby to Javascript Compiler',
+  version: '0.1.1',
   documentation: 'README.md',
-  git: 'git@github.com:wstucco/opal-meteor.git'
+  git: 'https://github.com/wstucco/meteor-opal'
+});
+
+Package.registerBuildPlugin({
+  name: "compileOpal",
+  use: [],
+  sources: [
+    'lib/opal.min.js',
+    'lib/opal-parser.min.js',
+    'plugin/compile-opal.js'
+  ],
 });
 
 Package.onUse(function (api) {
-  api.use('massimoronca:opal');
-
+  api.versionsFrom('METEOR@0.9.2');
   api.addFiles([
-    'lib/meteor.js.rb',
+    'lib/opal.min.js',
   ], ['client', 'server']);
 });
 
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('massimoronca:opal');
-  api.use('massimoronca:opal-meteor');
-  api.addFiles('test/meteor-tests.js.rb');
+  api.addFiles('test/opal-test-setup.rb');
+  api.addFiles('test/opal-tests.js');
 });
-

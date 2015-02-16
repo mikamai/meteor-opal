@@ -2,6 +2,10 @@
 
 Meteor support for Opal, the Ruby to Javascript Compiler
 
+# DISCLAIMER
+
+**this is alpha quality code**, it's not tested and not ready for production.
+
 ## What's Opal?
 
 [Opal](http://opalrb.org) is a ruby to javascript compiler, an implementation of the ruby corelib and stdlib, and associated gems.   
@@ -9,7 +13,7 @@ Meteor support for Opal, the Ruby to Javascript Compiler
 ## Installation
 
 ```
-meteor add mizzao:timesync
+meteor add massimoronca:opal
 ```
 
 Opal is supported on both the client and the server.  
