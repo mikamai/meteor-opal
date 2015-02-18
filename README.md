@@ -22,7 +22,7 @@ Files ending with `.rb` or `.js.rb` are automatically compiled to JavaScript.
 ## Javascript interoperability
 
 See the [compiled ruby section](http://opalrb.org/docs/compiled_ruby/) on Opal website.   
-Opal uses it's own global namespace, therefor classes and functions created using Opal, are immediatley available across every other module and/or package in the application, provided you use Opal or the Javascript equivalent `Opal.<item>`.   
+Opal uses it's own global namespace, therefore classes and functions created using Opal, are immediatley available across every other module and/or package in the application, provided you use Opal or the Javascript equivalent `Opal.<item>`.   
 For example the class `User` defined above will be accessible as `User` in Opal and as `Opal.User` in Javascript.  
 All functions are compiled with a `$` sign in front of the name, so method `new` of class `User` becomes `Opal.User.$new` and function `b` `Opal.Object.$b` (functions resides in the Object namespace).   
 
