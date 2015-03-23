@@ -1,9 +1,9 @@
 Package.describe({
-  name: 'massimoronca:opal',
+  name: 'mikamai:opal',
   summary: 'Opal - Ruby to Javascript Compiler',
   version: '0.1.1',
   documentation: 'README.md',
-  git: 'https://github.com/wstucco/meteor-opal'
+  git: 'https://github.com/mikamai/meteor-opal'
 });
 
 Package.registerBuildPlugin({
@@ -25,7 +25,7 @@ Package.onUse(function (api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('massimoronca:opal');
+  api.use('mikamai:opal');
   api.addFiles('test/opal-test-setup.rb');
   api.addFiles('test/opal-tests.js');
 });

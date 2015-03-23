@@ -13,7 +13,7 @@ Meteor support for Opal, the Ruby to Javascript Compiler
 ## Installation
 
 ```
-meteor add massimoronca:opal
+meteor add mikamai:opal
 ```
 
 Opal is supported on both the client and the server.  
