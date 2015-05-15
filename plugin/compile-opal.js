@@ -5,6 +5,8 @@ var handler = function (compileStep) {
   var outputFile = compileStep.inputPath + ".js";
 
   try {
+    Opal.require('opal-parser');
+
     var output = Opal.compile(source);
   } catch (e) {
     throw new Error(

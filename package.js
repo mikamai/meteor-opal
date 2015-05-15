@@ -1,7 +1,7 @@
 Package.describe({
   name: 'mikamai:opal',
   summary: 'Opal - Ruby to Javascript Compiler',
-  version: '0.1.1',
+  version: '0.1.2',
   documentation: 'README.md',
   git: 'https://github.com/mikamai/meteor-opal'
 });
@@ -17,7 +17,6 @@ Package.registerBuildPlugin({
 });
 
 Package.onUse(function (api) {
-  api.versionsFrom('METEOR@0.9.2');
   api.addFiles([
     'lib/opal.min.js',
   ], ['client', 'server']);

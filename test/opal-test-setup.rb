@@ -1,4 +1,4 @@
-a = 123
+$a = 123
 
 class User
   def name
